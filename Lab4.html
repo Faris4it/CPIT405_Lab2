@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="style" href="style.css">
+</head>
+
+<body>
+    <style>
+        .order-form {
+            width: 350px;
+            margin: 30px auto;
+            font-family: sans-serif;
+            padding: 20px;
+            border: 1px solid #ccc;
+
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #005A32;
+            /* KAU Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <form class="order-form">
+        <h2>Auto Parts Request</h2>
+
+        <div class="form-group">
+            <label>Name:</label>
+            <div class="name-fields">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Contact Info:</label>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Vehicle Details:</label>
+            <div class="vehicle-fields">
+                <input type="text" placeholder="Make (e.g. Toyota)" required>
+                <input type="text" placeholder="Model (e.g. Corolla)" required>
+                <input type="number" placeholder="Year" min="1900" max="2026" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Request Details:</label>
+            <input type="date" required>
+            <input type="text" placeholder="Spare Part Name" required>
+            <input type="number" placeholder="Quantity" min="1" value="1">
+        </div>
+
+        <div class="form-group">
+            <label>Comments:</label>
+            <textarea placeholder="Tell us more about the part..."></textarea>
+        </div>
+
+        <button type="submit">Place Request</button>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
