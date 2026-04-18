@@ -1,57 +1,72 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hello, world!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faris Ali Al-Harthi — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-  <p><strong>Faris Al-Harthi</strong></p>
-  <p><strong>2243149</strong></p>
-  <h1>CPIT405 Labs</h1>
-  <div class="profile-image">
-      <img src="20210530_122247739_iOS.png"  alt="Faris as a kid">
-      <style>
-      .profile-image img{
-        
-    position: absolute;   /* This allows you to move the div anywhere */
-    top: 20px;            /* 20px space from the top */
-    right: 20px;          /* 20px space from the right */
-    z-index: 100;         /* Ensures it stays on top of other content */
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="ProfilePic.JPG" alt="Faris logo" class="logo">
+        <span class="brand-text">Faris Ali Al-Harthi</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html">Labs / Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    width: 100px;         /* Makes the picture small */
-    height: auto;
-    border-style: solid;
-    border-width: 1px;
-      }
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Faris Ali Al-Harthi</h1>
+        <p class="subtitle">Student ID: <strong>2243149</strong></p>
+        <p class="lead">Welcome — I am an IT student at King Abdulaziz University focusing on software development, networking, and 3D design. I enjoy building practical projects that combine programming and creative tools.</p>
+        <div class="hero-cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="cv.html">Download CV</a>
+        </div>
+      </div>
+    </section>
 
-    </style>
+    <section class="about container">
+      <h2>About Me</h2>
+      <p>I am currently studying IT at KAU. My interests include Java and Python development, Blender for 3D modeling, and computer networking. I build small apps and labs as part of my coursework and personal learning.</p>
+    </section>
 
-  </div>
-  <hr>
-  <h2> Lab2: HTML</h2>
+    <section class="highlights container">
+      <article>
+        <h3>Skills</h3>
+        <p>Java · Python · Blender · Networking</p>
+      </article>
+      <article>
+        <h3>Education</h3>
+        <p>Highschool · Student at King Abdulaziz University (KAU)</p>
+      </article>
+      <article>
+        <h3>Contact</h3>
+        <p><a href="mailto:faris.alharthi22@gmail.com">faris.alharthi22@gmail.com</a></p>
+      </article>
+    </section>
+  </main>
 
-  <a href="Lab2.html">Lab 2</a>
-  <h2> Lab3: CSS</h2>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Faris Ali Al-Harthi — Student ID 2243149</p>
+    </div>
+  </footer>
 
-
-  <a href="Lab3.html">Lab 3</a>
-
-
-  <h2> Lab4: HTML & CSS</h2>
-  <a href="Lab4.html">Lab 4</a>
-  
-
-  <h2> Lab5: DOM API and JS Events</h2>
-  <a href="lab5/Lab5.html">Lab 5</a>
-
-  <h2> Lab6: JavaScript</h2>
-  <a href="lab6/Lab6.html">Lab 6</a>
-
-
-  <hr>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>

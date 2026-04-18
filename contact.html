@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Faris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Faris Ali Al-Harthi</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html">Labs / Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section>
+      <h1>Contact</h1>
+      <p>You can reach me via university email or the form below.</p>
+
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:falharthi0180@stu.kau.edu.sa">falharthi0180@stu.kau.edu.sa</a></li>
+        <li>Personal: <a href="mailto:faris.alharthi22@gmail.com">faris.alharthi22@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/Faris4it" target="_blank" rel="noopener">Faris4it</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/faris-al-harthi-4b9116304/?skipRedirect=true" target="_blank" rel="noopener">Faris Al-Harthi</a></li>
+      </ul>
+
+      <form class="contact-form" action="https://formsubmit.co/faris.alharthi22@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-contact"></span> Faris Ali Al-Harthi</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+</body>
+</html>

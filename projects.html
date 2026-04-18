@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Labs and Projects — Faris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Faris Ali Al-Harthi</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html" class="active">Labs / Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Labs & Projects</h1>
+      <p>Below are the labs and projects completed so far. Click a title to open the project or lab page.</p>
+
+      <ul class="project-list">
+        <li>
+          <h3><a href="405_labIndex.html" target="_blank" rel="noopener">Course Lab Index</a></h3>
+          <p>Index page for course labs.</p>
+        </li>
+
+        <li>
+          <h3><a href="projects/project-3d.html" target="_blank" rel="noopener">3D Model — Blender Demo</a></h3>
+          <p>Blender export and screenshots demonstrating modeling workflow.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-projects"></span> Faris Ali Al-Harthi</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-projects').textContent = new Date().getFullYear();</script>
+</body>
+</html>
