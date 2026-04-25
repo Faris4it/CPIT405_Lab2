@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Search API Demo</title>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Image Search API Demo</h1>
+
+  <div class="controls">
+    <input type="text" id="query" placeholder="Search images...">
+    <button onclick="fetchXHR()">Fetch with XHR</button>
+    <button onclick="fetchWithPromises()">Fetch with Promises</button>
+    <button onclick="fetchAsync()">Fetch with Async/Await</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
