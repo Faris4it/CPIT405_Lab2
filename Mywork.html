@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Labs / Projects — Faris Ali Al-Harthi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="ProfilePic.JPG" alt="Faris logo" class="logo">
+        <span class="brand-text">Faris Ali Al-Harthi</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html" class="active">Labs / Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>My Works</h1>
+        <p class="lead">A collection of web applications, software design patterns, and networking labs.</p>
+      </div>
+    </section>
+
+    <section class="projects container">
+      <div class="projects-grid">
+        
+        <!-- App 1: Rock Paper Scissors -->
+        <article class="project-card">
+          <h3>Rock Paper Scissors</h3>
+          <p>An interactive web game built entirely with vanilla JavaScript, HTML, and CSS. Features dynamic DOM updates and a running score tracker.</p>
+          <a class="btn" href="RockPapSes/index.html">Launch App</a>
+        </article>
+
+        <!-- App 2 Image Shelf -->
+        <article class="project-card">
+          <h3>Image Shelf</h3>
+          <p>A JavaScript-based web application that fetches and displays data from a third-party REST API (Unsplash).</p>
+          <a class="btn" href="ImageShelf/index.html">Launch App</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Faris Ali Al-Harthi — Student ID 2243149</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
