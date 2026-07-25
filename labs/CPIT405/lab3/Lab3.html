@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My thing</title>
+    <link rel="style" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="image-preview" img>
+
+        <img src='https://cpit405.gitlab.io/images/KAU_logo.png'>
+        <style>
+            .image-preview img {
+                border-radius: 30px;
+
+                border-style: solid;
+                border-width: 30px;
+
+                border-top-color: skyblue;
+                border-bottom-color: lightgreen;
+                border-left-color: #ffefd5;
+                border-right-color: lightpink;
+            }
+        </style>
+    </div>
+
+    <div id="header">
+        <span class="myclass1">Every</span>
+        <span class="myclass2">one can</span>
+        <span class="myclass3">success.</span>
+    </div>
+    <p> One machine can do the work of fifty ordinary men.
+        <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+    </p>
+
+    <style>
+        p>span {
+            color: red;
+        }
+
+        #header span {
+            color: pink;
+        }
+
+        span {
+            color: green;
+        }
+
+        #header *:last-child {
+            color: orange;
+        }
+
+        #header span:first-child:hover {
+            color: blue;
+        }
+    </style>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Selector</th>
+                <th>color</th>
+                <th>color when mouse over</th>
+                
+            </tr>
+        <tbody>
+            <tr>
+                <td>span.myclass1</td>
+                <td>pink</td>
+                <td>blue</td>
+            </tr>
+            <tr>
+                <td>span.myclass2</td>
+                <td>pink</td>
+                <td>pink</td>
+            </tr>
+            <tr>
+                <td>span.myclass3</td>
+                <td>orange</td>
+                <td>orange</td>
+            </tr>
+            <tr>
+                <td>span.myclass4</td>
+                <td>red</td>
+                <td>red</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <!-- <p>First Name:</p><hr>
+        <form>
+            <label for="
+            fname">First name:</label>
+        <input type="text" name ="fname" id="fname">
+        <input type="submit">
+
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <input type="radio">
+        </form> -->
+</body>
+
+</html>

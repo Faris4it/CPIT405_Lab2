@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faris Ali Al-Harthi — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/ProfilePic.JPG" alt="Faris logo" class="logo">
+        <span class="brand-text">Faris Ali Al-Harthi</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html">Labs / Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Mywork.html">My work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Faris Ali Al-Harthi</h1>
+        <p class="subtitle">GPA: <strong>4.24</strong></p>
+        <p class="lead">Welcome — I am an IT student at King Abdulaziz University focusing on software development, networking, and 3D design. I enjoy building practical projects that combine programming and creative tools.</p>
+        <div class="hero-cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="assets/Faris_Alharthi_Resume.pdf" download="Faris_Al_Harthi_CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2>About Me</h2>
+      <p>I am currently studying IT at KAU. My interests include Java and Python development, Blender for 3D modeling, and computer networking. I build small apps and labs as part of my coursework and personal learning.</p>
+    </section>
+
+    <section class="highlights container">
+      <article>
+        <h3>Skills</h3>
+        <p>Java · Python · Blender · Networking</p>
+      </article>
+      <article>
+        <h3>Education</h3>
+        <p>Highschool · Student at King Abdulaziz University (KAU)</p>
+      </article>
+      <article>
+        <h3>Contact</h3>
+        <p><a href="mailto:faris.alharthi22@gmail.com">faris.alharthi22@gmail.com</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Faris Ali Al-Harthi — Student ID 2243149</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

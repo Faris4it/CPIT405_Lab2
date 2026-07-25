@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Labs and Projects — Faris</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/ProfilePic.JPG" alt="Faris logo" class="logo">
+        <span class="brand-text">Faris Ali Al-Harthi</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projects.html" class="active">Labs / Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Mywork.html">My work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Labs & Projects</h1>
+      <p>Below are the labs and projects completed so far. Click a title to open the project or lab page.</p>
+
+      <ul class="project-list">
+        <li>
+          <h3><a href="https://faris4it.github.io/wens/" target="_blank" rel="noopener">وِنس (Wens) — Saudi Social Gaming Platform</a></h3>
+          <p>Brand and product for a Saudi startup reimagining group games for friends, family, couples, and Ramadan gatherings. Led design and frontend end-to-end: brand identity, visual system, and three playable games (social deduction, party game, conversation deck) — built in vanilla HTML/CSS/JS, deployed static on GitHub Pages.</p>
+          <p><a href="https://github.com/Faris4it/wens.git" target="_blank" rel="noopener">View on GitHub</a></p>
+        </li>
+        <li>
+          <h3><a href="labs/CPIT405/405_labIndex.html" target="_blank" rel="noopener">Web Fundamentals Series</a></h3>
+          <p>A hands-on progression through core front-end skills — HTML, CSS, DOM & JS events, and asynchronous JavaScript (AJAX).</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-projects"></span> Faris Ali Al-Harthi</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year-projects').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Centers the form and adds basic spacing */
+.order-form {
+    width: 350px;
+    margin: 30px auto;
+    font-family: sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Makes labels sit on their own line */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Makes all inputs the same width */
+input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Simple button styling */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #005A32; /* KAU Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
