@@ -37,7 +37,17 @@
     <section class="projects container">
       <div class="projects-grid">
 
-        <!-- App 1: Wens -->
+        <!-- App 1: Azure URL Shortener -->
+        <article class="project-card">
+          <h3>Azure URL Shortener — Serverless API &amp; Infrastructure as Code</h3>
+          <p>A serverless URL shortener running live on Microsoft Azure. Python Azure Functions backed by Table Storage, with the entire cloud environment — compute, storage, monitoring, and secrets — defined as code in a single Bicep template. A GitHub Actions pipeline runs the test suite before every release and authenticates to Azure through OIDC federation, so no long-lived credentials are stored anywhere. Includes managed-identity access to Key Vault and Application Insights telemetry.</p>
+          <p class="muted tech-stack">Python · Azure Functions · Bicep · GitHub Actions · Table Storage · OIDC</p>
+          <div class="project-links">
+            <a class="btn" href="https://github.com/Faris4it/azure-url-shortener" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <!-- App 2: Wens -->
         <article class="project-card">
           <h3>وِنس (Wens) — Saudi Social Gaming Platform</h3>
           <p>Brand and product for a Saudi startup reimagining group games for friends, family, couples, and Ramadan gatherings. Led design and frontend end-to-end: brand identity, visual system, and three playable games (social deduction, party game, conversation deck) — built in vanilla HTML/CSS/JS, deployed static on GitHub Pages.</p>
@@ -47,21 +57,21 @@
           </div>
         </article>
 
-        <!-- App 2: Rock Paper Scissors -->
+        <!-- App 3: Rock Paper Scissors -->
         <article class="project-card">
           <h3>Rock Paper Scissors</h3>
           <p>An interactive web game built entirely with vanilla JavaScript, HTML, and CSS. Features dynamic DOM updates and a running score tracker.</p>
           <a class="btn" href="projects/RockPapSes/index.html">Launch App</a>
         </article>
 
-        <!-- App 3: Image Shelf -->
+        <!-- App 4: Image Shelf -->
         <article class="project-card">
           <h3>Image Shelf</h3>
           <p>A JavaScript-based web application that fetches and displays data from a third-party REST API (Unsplash).</p>
           <a class="btn" href="projects/ImageShelf/index.html">Launch App</a>
 
         </article>
-        <!-- App 4: PHP product -->
+        <!-- App 5: PHP product -->
         <article class="project-card">
           <h3>PHP Product Manager</h3>
           <p>A lightweight, server-side web application built with PHP and SQLite</p>
